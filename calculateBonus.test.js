@@ -10,13 +10,19 @@ describe("Basic functionality", () => {
   });
 });
 
-describe("Handling other input types", () => {
+describe("Handling different input types", () => {
   test("Accurately calculates sum with floating point numbers", () => {
     expect(calculateBonus(10.5, 21.7)).toBe(32.2);
   });
 
-  test("Returns correct sum or 50 when values are strings", () => {
+  test("Returns correct sum or 50 when values are numeric strings", () => {
     expect(calculateBonus("18", "42")).toBe(50);
+    expect(calculateBonus("13.5", "21.1")).toBe(34.6);
+  });
+
+  test("Returns undefined when values are not numbers", () => {
+    expect(calculateBonus(15, { value: 15 })).toBe(undefined);
+    expect(calculateBonus([23, 12, 14], 30)).toBe(undefined);
   });
 });
 
