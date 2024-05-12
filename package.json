@@ -4,7 +4,8 @@
   "description": "HW tasks 3.1",
   "main": "calculateBonus.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "test:coverage": "jest --coverage"
   },
   "keywords": [],
   "repository": {
