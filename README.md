@@ -1,10 +1,19 @@
 # qa_auto_3.1
 
+## Table of Contents
+1. [Description](#description)
+2. [Installation](#installation)
+3. [Setup](#setup)
+4. [Test suites overview](#test-suites-overview)
+5. [Running tests](#running-tests)
+6. [Coverage measurement](#coverage-measurement)
+
+
 ## Description 📝
 
 This project includes the `calculateBonus` JavaScript function. It takes two numerical inputs, sums them, and evaluates the total. If the sum is 50 or less, it returns this value; if the sum exceeds 50, it caps the return value at 50. This function is tested with Jest to ensure it performs as expected.
 
-This project is part of the homework assignment for Module 3.1 "Unit Tests. Jest Introduction" of a course on JavaScript test automation.
+This project is part of the homework assignments for Module 3 "Unit Tests" of a course on JavaScript test automation.
 
 ## Installation 🛠️
 
@@ -26,7 +35,7 @@ This project is part of the homework assignment for Module 3.1 "Unit Tests. Jest
 npm install
 ```
 
-## Test Suites Overview 🔍
+## Test suites overview 🔍
 
 - **Basic functionality**
   - Tests that the function returns the correct sum when the combined value of inputs is less than or equal to 50, and caps the value at 50 when the sum exceeds 50.
@@ -44,7 +53,7 @@ npm install
   - Focuses on edge cases close to the threshold (like sums of 49, 50, and 51) to verify the function behaves as expected in boundary conditions.
 
 
-## Running Tests 🧪
+## Running tests 🧪
 
 Test the functionality of the `calculateBonus` function with:
 ```
@@ -54,3 +63,29 @@ OR
 ```
 npx jest
 ```
+
+## Coverage measurement 📊
+
+![image](https://github.com/shinkai-tester/qa_auto_3.1/assets/57576102/10244595-63af-4ba8-98ed-9106b27c7890)
+
+
+Coverage measurement in testing evaluates how much of your code is executed while the tests run. Here's what each metric means:
+
+- **Lines**: % of code lines executed during the tests;
+- **Functions**: % of functions that are called during the tests;
+- **Branches**: % of conditional code branches (like in `if` statements) that are executed.
+
+
+### Running coverage
+
+To generate a coverage report, `--coverage` flag can be added to Jest test command:
+
+```
+npx jest --coverage
+```
+Alternatively, since `"test:coverage": "jest --coverage"` is configured in `package.json`, you can also run the coverage using:
+
+```
+npm run test:coverage
+```
+
