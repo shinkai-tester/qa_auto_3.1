@@ -1,12 +1,12 @@
 # qa_auto_3.1
 
-## Table of Contents
-1. [Description](#description)
-2. [Installation](#installation)
-3. [Setup](#setup)
-4. [Test suites overview](#test-suites-overview)
-5. [Running tests](#running-tests)
-6. [Coverage measurement](#coverage-measurement)
+## Table of contents
+- [Description](#description-)
+- [Installation](#installation-)
+- [Setup](#setup-)
+- [Test suites overview](#test-suites-overview-)
+- [Running tests](#running-tests-)
+- [Coverage measurement](#coverage-measurement-)
 
 
 ## Description 📝
